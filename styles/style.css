@@ -6,6 +6,8 @@
   --bg-our-team: #f5f4fa;
   --white-color-text: #ffffff;
   --title-box-color: #2f303a;
+  --shadow-color: #eeeeee;
+  --header-border: #ececec;
 }
 
 p,
@@ -54,7 +56,7 @@ body {
 }
 
 .header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--header-border);
 }
 
 .header-container {
@@ -123,6 +125,14 @@ body {
 .header-contakts-item:not(:last-child) {
   margin-right: 40px;
 }
+.header-contakts-item {
+  display: flex;
+}
+.header-envelop {
+  width: 16px;
+  height: 12px;
+  margin-top: auto;
+}
 
 .header-contakts-link {
   display: block;
@@ -163,6 +173,7 @@ body {
 }
 
 .main-heading {
+  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -195,6 +206,7 @@ body {
 }
 
 .our-team-heading {
+  margin-bottom: 50px;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -203,8 +215,7 @@ body {
 .name-card {
   padding-top: 30px;
   padding-bottom: 30px;
-  border: 1px solid var(--primary-text-color);
-  border-top: none;
+
   background-color: var(--white-color-text);
 }
 .our-team-name {
@@ -303,11 +314,12 @@ body {
 .our-team-list {
   display: flex;
   margin: -15px;
-  margin-top: 94px;
 }
 .our-team-item {
   flex-basis: calc(100% / 4 - 30px);
   margin: 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .our-team-item:not(:last-child) {
   margin-right: 15px;
@@ -317,12 +329,12 @@ body {
 
 .section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .filter {
   font-weight: 500;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding: 6px 22px;
   line-height: 1.62;
   text-align: center;
   border-radius: 4px;
@@ -338,23 +350,23 @@ body {
   background: var(--header-link-color);
 }
 .card-box {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid var(--primary-text-color);
+  padding: 20px 24px;
+  border: 1px solid var(--shadow-color);
+  border-top: none;
 }
 .card-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-left: 24px;
+
   color: var(--primary-title-color);
 }
 
 .card-paragraph {
   line-height: 30px;
   margin-top: 4px;
-  margin-left: 24px;
+
   color: var(--primary-text-color);
 }
 
@@ -380,7 +392,6 @@ body {
 .hero-container {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
 }
 
 .hero-container-item:not(:nth-last-child(-n + 3)) {
