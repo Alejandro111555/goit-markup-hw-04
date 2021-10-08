@@ -105,7 +105,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-title-color);
 }
-.header-link:hover,
+.hero-container-link.header-link:hover,
 .header-contakts-link:hover,
 .header-contakts-link:focus,
 .header-link:focus,
@@ -413,11 +413,12 @@ body {
   flex-wrap: wrap;
 }
 .hero-container-link {
+  display: block;
   width: 100%;
   height: 100%;
 }
-.hero-container-link :hover,
-.hero-container-link :focus {
+.hero-container-item:hover .hero-container-link,
+.hero-container-item:focus .hero-container-link {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
