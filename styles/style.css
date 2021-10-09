@@ -561,7 +561,6 @@ footer.header-logo {
 /*add footer social - link*/
 .footer-container {
   display: flex;
-  align-self: flex-start;
 }
 .footer-social-heading {
   font-weight: 700;
