@@ -561,6 +561,7 @@ footer.header-logo {
 /*add footer social - link*/
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-social-heading {
   font-weight: 700;
@@ -571,8 +572,7 @@ footer.header-logo {
   text-transform: uppercase;
 }
 .footer-social {
-  padding-top: 10px;
-  padding-left: 70px;
+  margin-left: 70px;
 }
 .footer-social-list {
   display: flex;
